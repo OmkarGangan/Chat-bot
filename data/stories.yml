@@ -1,0 +1,45 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interview path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: interview
+  - action: action_return_interview
+
+- story: dataset path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dataset
+  - action: action_return_dataset
+
+- story: blogs path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: blogs
+  - action: utter_blogs
+
+- story: books path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: books
+  - action: utter_books
+
+- story: coding path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: coding
+  - action: utter_coding
